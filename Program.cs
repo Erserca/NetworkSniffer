@@ -39,7 +39,7 @@ namespace Sniffer
                 b = connection.LocalEndPoint.Port.ToString();
                 c = connection.RemoteEndPoint.Address.ToString();
                 d = connection.RemoteEndPoint.Port.ToString();
-                File.AppendAllText(@"baglanti.txt","Yerel Ağ: "+ a +", Yerel Port: "+ b + ", Uzak Ağ: "+ c +", Uzak Port: " + d + ", Tarih: " + DateTime.Now +"\r\n");
+                File.AppendAllText(@"baglanti.txt","Yerel Ağ: "+ a +":"+ b + ", Uzak Ağ: "+ c +":" + d + ", Tarih: " + DateTime.Now +"\r\n");
 
  
             }
